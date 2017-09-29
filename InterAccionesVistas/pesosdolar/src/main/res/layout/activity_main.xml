@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="mx.solucionesweb.pesosdolar.MainActivity">
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Peso" app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Dolar" app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="200sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/imageViewMexico"
+        android:layout_width="100sp"
+        android:layout_height="90sp"
+        android:layout_marginLeft="0sp"
+        app:srcCompat="@drawable/mexico" />
+
+    <ImageView
+        android:id="@+id/imageViewEU"
+        android:layout_width="100sp"
+        android:layout_height="90sp"
+        android:layout_marginLeft="200sp"
+        app:srcCompat="@drawable/eu" />
+
+
+    <EditText
+        android:id="@+id/txtPeso"
+        android:layout_width="100sp"
+        android:inputType="number"
+        android:layout_height="50sp"
+        android:layout_marginLeft="0sp"
+        android:layout_marginTop="100sp"
+        android:hint="0"
+         />
+
+    <EditText
+        android:id="@+id/txtDolar"
+        android:layout_width="100sp"
+        android:layout_height="50sp"
+        android:inputType="number"
+        android:layout_marginLeft="200sp"
+        android:layout_marginTop="100sp"
+        android:hint="0"
+         />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDolar"
+        android:layout_marginTop="150dp"
+
+        android:text="Button" />
+
+
+</RelativeLayout>
