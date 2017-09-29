@@ -5,9 +5,27 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" tools:context="mx.solucionesweb.pesosdolar.MainActivity">
 
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="TipoCambio" app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtTipoCambio"
+        android:layout_width="100sp"
+        android:inputType="numberDecimal"
+        android:layout_height="50sp"
+        android:layout_marginLeft="80sp"
+        android:text="17.60"
+        />
+
+
     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
         android:text="Peso" app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="60sp"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
@@ -15,6 +33,7 @@
         app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent"
         android:layout_marginLeft="200sp"
         app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="60sp"
         android:id="@+id/textView" />
 
     <ImageView
@@ -22,12 +41,14 @@
         android:layout_width="100sp"
         android:layout_height="90sp"
         android:layout_marginLeft="0sp"
+        android:layout_marginTop="70sp"
         app:srcCompat="@drawable/mexico" />
 
     <ImageView
         android:id="@+id/imageViewEU"
         android:layout_width="100sp"
         android:layout_height="90sp"
+        android:layout_marginTop="70sp"
         android:layout_marginLeft="200sp"
         app:srcCompat="@drawable/eu" />
 
@@ -35,10 +56,10 @@
     <EditText
         android:id="@+id/txtPeso"
         android:layout_width="100sp"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:layout_height="50sp"
         android:layout_marginLeft="0sp"
-        android:layout_marginTop="100sp"
+        android:layout_marginTop="150sp"
         android:hint="0"
          />
 
@@ -46,22 +67,31 @@
         android:id="@+id/txtDolar"
         android:layout_width="100sp"
         android:layout_height="50sp"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:layout_marginLeft="200sp"
-        android:layout_marginTop="100sp"
+        android:layout_marginTop="150sp"
         android:hint="0"
          />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
+        android:id="@+id/buttonADolar"
+        android:layout_width="100sp"
         android:layout_marginLeft="10sp"
         android:layout_marginRight="10sp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtDolar"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="30dp"
+        android:text="-> dolar" />
 
-        android:text="Button" />
+    <Button
+        android:id="@+id/buttonAPeso"
+        android:layout_width="100sp"
+        android:layout_marginRight="10sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDolar"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="200sp"
+        android:text="-> peso" />
 
 
 </RelativeLayout>
